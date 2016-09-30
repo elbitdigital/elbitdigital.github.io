@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="">
 <meta charset="UTF-8">
-<title></title>
+<title>Elbit | Você, digital</title>
 <meta name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
 <script src="dist/js/villa.min.js"></script>
+<link rel="stylesheet" href="dist/css/elbit.css"/>
 <link rel="stylesheet" href="dist/css/villa.min.css"/>
 <!--[if lt IE 9]>
 <link rel="stylesheet" type="text/css" href="dist/css/material-colors.css"/>
@@ -16,7 +17,37 @@
 
 <body>
 
+<header class="Header grey-700">
 
+	<div class="Header-background"></div>
+
+	<div class="Header-inner container">
+
+		<div class="Logo">
+
+			<div class="Logo-selectArea">
+
+				<div id="logo" class="Logo-inner"></div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</header>
+
+<script src="dist/js/elbit.js"></script>
+
+<script>
+
+	var logo = new Logo(document.getElementById('logo'), 'dist/img/ElbitLogo--web.svg', function () {
+
+//		logo.cloneTo(document.getElementById('footer-logo'));
+
+	});
+
+</script>
 
 </body>
 

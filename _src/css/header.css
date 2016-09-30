@@ -1,0 +1,40 @@
+
+/* Header */
+
+.Header {
+	width: 100%;
+	padding: 6em 0;
+}
+
+.Header-background {
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+
+.Header-inner {
+	background-color: red;
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+
+.Header-inner.container {
+	padding: 0 1em;
+}
+
+@media (min-width: 48em) {
+
+	.Header-inner.container {
+
+	}
+
+}
+
+@media (min-width: 96em) {
+
+	.Header-inner.container {
+		max-width: 72em;
+	}
+
+}
