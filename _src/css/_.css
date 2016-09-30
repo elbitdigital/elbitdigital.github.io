@@ -5,6 +5,17 @@
 */
 
 .container {
+	padding-left: 1em;
+	padding-right: 1em;
 	position: relative;
 	width: 100%;
+}
+
+@media (min-width: 60em) {
+
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 }

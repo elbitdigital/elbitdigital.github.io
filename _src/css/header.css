@@ -3,7 +3,7 @@
 
 .Header {
 	width: 100%;
-	padding: 6em 0;
+	padding: 1.3125em 0 16em;
 }
 
 .Header-background {
@@ -13,28 +13,35 @@
 }
 
 .Header-inner {
-	background-color: red;
 	height: 100%;
 	position: relative;
 	width: 100%;
 }
 
-.Header-inner.container {
-	padding: 0 1em;
-}
-
-@media (min-width: 48em) {
+@media (min-width: 60em) {
 
 	.Header-inner.container {
+		max-width: 48em;
+	}
 
+}
+
+@media (min-width: 72em) {
+
+	.Header-inner.container {
+		max-width: 72em;
 	}
 
 }
 
 @media (min-width: 96em) {
 
+	.Header {
+		padding: 6em 0 36em;
+	}
+
 	.Header-inner.container {
-		max-width: 72em;
+		max-width: 96em;
 	}
 
 }

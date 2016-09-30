@@ -2,8 +2,8 @@
 /* Logo */
 
 .Logo {
-	height: 3em; /* width divided by 2 */
-	width: 6em; /* height times 2 */
+	height: 3.75em; /* width divided by 2 */
+	width: 7.5em; /* height times 2 */
 	position: relative;
 }
 
@@ -29,4 +29,15 @@
 
 .Logo #ElbitLogo-bit {
 	display: none;
+}
+
+@media (min-width: 96em) {
+
+	/* Logo */
+
+	.Logo {
+		height: 4.5em; /* width divided by 2 */
+		width: 9em; /* height times 2 */
+	}
+
 }

@@ -1,5 +1,0 @@
-/*!
- * Elbit Website Project v0.0.0 (http://letsmowe.org/)
- * Copyright 2013-2016 Elbit Developers
- * Licensed under MIT (https://github.com/elbitdigital/elbitdigital.github.io/blob/master/LICENSE)
-*/.container{position:relative;width:100%}.Header{width:100%;padding:6em 0}.Header-background{height:100%;position:absolute;width:100%}.Header-inner,.Logo,.Logo-inner{position:relative}.Header-inner{background-color:red;height:100%;width:100%}.Header-inner.container{padding:0 1em}@media (min-width:96em){.Header-inner.container{max-width:72em}}.Logo{height:3em;width:6em}.Logo svg,.Logo-inner,.Logo-selectArea{height:100%;width:100%}.Logo #ElbitLogoType{fill:#fff}.Logo #ElbitLogo-bit{display:none}

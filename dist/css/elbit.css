@@ -5,14 +5,23 @@
 */
 
 .container {
+  padding-left: 1em;
+  padding-right: 1em;
   position: relative;
   width: 100%;
+}
+
+@media (min-width: 60em) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 /* Header */
 
 .Header {
   width: 100%;
-  padding: 6em 0;
+  padding: 1.3125em 0 16em;
 }
 
 .Header-background {
@@ -22,31 +31,38 @@
 }
 
 .Header-inner {
-  background-color: red;
   height: 100%;
   position: relative;
   width: 100%;
 }
 
-.Header-inner.container {
-  padding: 0 1em;
+@media (min-width: 60em) {
+  .Header-inner.container {
+    max-width: 48em;
+  }
 }
 
-@media (min-width: 48em) {
-
+@media (min-width: 72em) {
+  .Header-inner.container {
+    max-width: 72em;
+  }
 }
 
 @media (min-width: 96em) {
+  .Header {
+    padding: 6em 0 36em;
+  }
+
   .Header-inner.container {
-    max-width: 72em;
+    max-width: 96em;
   }
 }
 /* Logo */
 
 .Logo {
-  height: 3em;
+  height: 3.75em;
   /* width divided by 2 */
-  width: 6em;
+  width: 7.5em;
   /* height times 2 */
   position: relative;
 }
@@ -73,4 +89,15 @@
 
 .Logo #ElbitLogo-bit {
   display: none;
+}
+
+@media (min-width: 96em) {
+  /* Logo */
+
+  .Logo {
+    height: 4.5em;
+    /* width divided by 2 */
+    width: 9em;
+    /* height times 2 */
+  }
 }
