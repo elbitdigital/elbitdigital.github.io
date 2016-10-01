@@ -8,6 +8,7 @@
 }
 
 .Logo-selectArea {
+	cursor: pointer;
 	width: 100%;
 	height: 100%;
 }
@@ -23,12 +24,37 @@
 	width: 100%;
 }
 
+.Logo path {
+
+}
+
+.Logo svg * {
+	-webkit-transition: all .45s;
+	-moz-transition: all .45s;
+	-ms-transition: all .45s;
+	-o-transition: all .45s;
+	transition: all .45s;
+}
+
 .Logo #ElbitLogoType {
 	fill: #ffffff;
 }
 
 .Logo #ElbitLogo-bit {
-	display: none;
+	fill: transparent;
+}
+
+.Logo .Logo-selectArea:hover #ElbitLogo * {
+	fill: #000000;
+}
+
+.Logo .Logo-selectArea:hover #ElbitLogo-bit {
+	fill: #ffc400;
+	-webkit-transition: all .3s .225s;
+	-moz-transition: all .3s .225s;
+	-ms-transition: all .3s .225s;
+	-o-transition: all .3s .225s;
+	transition: all .3s .225s;
 }
 
 @media (min-width: 96em) {

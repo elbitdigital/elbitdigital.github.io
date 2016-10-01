@@ -6,6 +6,12 @@
 	padding: 1.3125em 0 16em;
 }
 
+.Header h2 {
+	font-size: 2.25em;
+	font-weight: 700;
+	line-height: 1.36;
+}
+
 .Header-background {
 	height: 100%;
 	position: absolute;
@@ -13,9 +19,28 @@
 }
 
 .Header-inner {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column;
+	flex-flow: column;
 	height: 100%;
 	position: relative;
 	width: 100%;
+}
+
+.Header-logo {
+	margin-bottom: 6em;
+}
+
+@media (min-width: 48em) {
+
+	.Header-logo {
+		margin-bottom: 10em;
+	}
+
 }
 
 @media (min-width: 60em) {
@@ -24,12 +49,24 @@
 		max-width: 48em;
 	}
 
+	.Header-logo {
+		margin-bottom: 12em;
+	}
+
 }
 
 @media (min-width: 72em) {
 
+	.Header h2 {
+		font-size: 3em;
+	}
+
 	.Header-inner.container {
 		max-width: 72em;
+	}
+
+	.Header-logo {
+		margin-bottom: 16em;
 	}
 
 }
@@ -37,11 +74,15 @@
 @media (min-width: 96em) {
 
 	.Header {
-		padding: 6em 0 36em;
+		padding: 4.5em 0 10em;
 	}
 
 	.Header-inner.container {
 		max-width: 96em;
 	}
+
+    .Header-logo {
+	    margin-bottom: 21em;
+    }
 
 }
