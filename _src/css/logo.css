@@ -37,11 +37,13 @@
 }
 
 .Logo #ElbitLogoType {
-	fill: #ffffff;
+	/*fill: #ffffff;*/
+	fill: #000;
 }
 
 .Logo #ElbitLogo-bit {
-	fill: transparent;
+	/*fill: transparent;*/
+	fill: #ffc400;
 }
 
 .Logo .Logo-selectArea:hover #ElbitLogo * {

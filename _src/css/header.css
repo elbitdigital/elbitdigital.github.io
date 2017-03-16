@@ -3,7 +3,8 @@
 
 .Header {
 	width: 100%;
-	padding: 1.3125em 0 16em;
+	/*padding: 1.3125em 0 16em;*/
+	padding: 1.3125em 0;
 }
 
 .Header h2 {
@@ -32,13 +33,22 @@
 }
 
 .Header-logo {
-	margin-bottom: 6em;
+	margin: 1em 0 2em;
 }
 
 @media (min-width: 48em) {
 
+	.Header-inner {
+		-webkit-align-items: center;
+		align-items: center;
+		-webkit-flex-flow: row;
+		flex-flow: row;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+	}
+
 	.Header-logo {
-		margin-bottom: 10em;
+		margin: 1em 0 1em;
 	}
 
 }
@@ -47,10 +57,6 @@
 
 	.Header-inner.container {
 		max-width: 48em;
-	}
-
-	.Header-logo {
-		margin-bottom: 12em;
 	}
 
 }
@@ -62,11 +68,7 @@
 	}
 
 	.Header-inner.container {
-		max-width: 72em;
-	}
-
-	.Header-logo {
-		margin-bottom: 16em;
+		max-width: 68em;
 	}
 
 }
@@ -78,11 +80,7 @@
 	}
 
 	.Header-inner.container {
-		max-width: 96em;
+		max-width: 80em;
 	}
-
-    .Header-logo {
-	    margin-bottom: 21em;
-    }
 
 }
