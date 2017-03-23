@@ -4,6 +4,11 @@
  * Licensed under MIT (https://github.com/elbitdigital/elbitdigital.github.io/blob/master/LICENSE)
 */
 
+pre,
+code {
+  overflow: scroll;
+}
+
 .container {
   padding-left: 1.125em;
   padding-right: 1.125em;
@@ -11,11 +16,50 @@
   width: 100%;
 }
 
+@media (min-width: 48em) {
+
+}
+
 @media (min-width: 60em) {
   .container {
+    max-width: 48em;
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+@media (min-width: 72em) {
+  .container {
+    max-width: 68em;
+  }
+}
+
+@media (min-width: 96em) {
+  .container {
+    max-width: 80em;
+  }
+}
+/* Aside list */
+
+.AsideList {
+  margin-bottom: 1em;
+}
+
+.AsideList-item {
+  line-height: 1.75;
+}
+/* Aside */
+
+.Aside {
+  margin-bottom: 1em;
+}
+
+.Aside-title {
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: .5em;
+  color: #333;
 }
 /* Header */
 
@@ -25,16 +69,25 @@
   padding: 1.3125em 0;
 }
 
-.Header h2 {
-  font-size: 2.25em;
-  font-weight: 700;
-  line-height: 1.36;
-}
+/*.Header h2 {*/
+
+/*font-size: 2.25em;*/
+
+/*font-weight: 700;*/
+
+/*line-height: 1.36;*/
+
+/*}*/
+
+/* Header background */
 
 .Header-background {
   height: 100%;
   position: absolute;
+  right: 0;
+  top: 0;
   width: 100%;
+  z-index: -1;
 }
 
 .Header-inner {
@@ -51,7 +104,7 @@
 }
 
 .Header-logo {
-  margin: 1em 0 2em;
+  margin: 1em 0;
 }
 
 @media (min-width: 48em) {
@@ -65,14 +118,16 @@
   }
 
   .Header-logo {
-    margin: 1em 0 1em;
+    /*margin: 1em 0 1em;*/
   }
 }
 
 @media (min-width: 60em) {
-  .Header-inner.container {
-    max-width: 48em;
-  }
+  /*.Header-inner.container {*/
+
+  /*max-width: 48em;*/
+
+  /*}*/
 }
 
 @media (min-width: 72em) {
@@ -80,19 +135,25 @@
     font-size: 3em;
   }
 
-  .Header-inner.container {
-    max-width: 68em;
-  }
+  /*.Header-inner.container {*/
+
+  /*max-width: 68em;*/
+
+  /*}*/
 }
 
 @media (min-width: 96em) {
-  .Header {
-    padding: 4.5em 0 10em;
-  }
+  /*.Header {*/
 
-  .Header-inner.container {
-    max-width: 80em;
-  }
+  /*padding: 4.5em 0 10em;*/
+
+  /*}*/
+
+  /*.Header-inner.container {*/
+
+  /*max-width: 80em;*/
+
+  /*}*/
 }
 /* Logo */
 
@@ -164,6 +225,54 @@
     /* height times 2 */
   }
 }
+/* Main */
+
+.Main {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 48em) {
+  .Main--aside {
+    -webkit-align-items: baseline;
+    align-items: baseline;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+
+  .Main--aside .Aside {
+    min-width: 10em;
+  }
+
+  .Main--aside .Content {
+    /*padding: 0 1em;*/
+    flex: 1;
+    /*width: 100%;*/
+    /*overflow: hidden;*/
+  }
+
+  .Main--aside .Content h2 {
+    padding-bottom: .5em;
+  }
+
+  /*.Main--aside .Content fieldset {*/
+
+  /*display: none;*/
+
+  /*}*/
+}
+
+@media (min-width: 72em) {
+  .Main--aside .Aside {
+    min-width: 12em;
+  }
+}
 /* Nav List */
 
 .NavList {
@@ -185,9 +294,11 @@
 
 .NavList-item:before {
   color: #bdbdbd;
-  content: "/";
+  content: "•";
   font-weight: 600;
-  margin-left: .25em;
+  margin-left: .5em;
+  margin-right: .5em;
+  /*font-size: 1.275em;*/
 }
 
 .NavList-item:first-child:before {
@@ -195,12 +306,15 @@
 }
 
 .NavList-item a {
-  color: #212121;
+  -webkit-font-smoothing: antialiased !important;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  /*color: #212121;*/
+  color: #000;
   display: inline-block;
-  font-size: 1.175em;
+  font-size: 1.5em;
   font-size-adjust: none;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-weight: 500;
+  text-transform: lowercase;
   padding-bottom: 3px;
   -webkit-transition: color .2s ease;
   -moz-transition: color .2s ease;
@@ -225,21 +339,21 @@
 
 .NavList-item a:hover:after {
   margin: 0 auto;
-  width: 100%;
+  width: 75%;
   background-color: #ffc400;
 }
 
 @media (min-width: 48em) {
   .NavList-item {
-    margin-right: .5em;
+    /*margin-right: .5em;*/
   }
 
   .NavList-item:before {
-    margin-right: .5em;
+    /*margin-right: .5em;*/
   }
 
   .NavList-item a {
-    font-size: 1.275em;
+    font-size: 1.5em;
   }
 }
 
@@ -255,3 +369,9 @@
 
 }
 /* Nav */
+
+@media (min-width: 48em) {
+  .Nav {
+    margin: 0 1em;
+  }
+}

@@ -1,0 +1,14 @@
+
+/* Aside */
+
+.Aside {
+	margin-bottom: 1em;
+}
+
+.Aside-title {
+	font-size: 1em;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: .5em;
+	color: #333;
+}

@@ -1,0 +1,94 @@
+
+/* Style Guide page style */
+
+/* Main blocks */
+
+.StyleGuide-info,
+.StyleGuide-base-styles {
+	margin-bottom: 2em;
+	padding-bottom: .5em;
+}
+
+.StyleGuide-info {
+	border-bottom: 3px dotted #ccc;
+}
+
+.StyleGuide-section {
+	margin-bottom: 1.5em;
+}
+
+.StyleGuide-base-styles .StyleGuide-section {
+	margin-bottom: 2em;
+}
+
+/* Secondary blocks */
+
+/* Colors */
+
+.StyleGuide-color-grid {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+.StyleGuide-color {
+	margin-bottom: 1em;
+	margin-right: .5em;
+	min-width: 8em;
+}
+
+.StyleGuide-color:last-of-type {
+	margin-right: 0;
+}
+
+.StyleGuide-color-name,
+.StyleGuide-color-value {
+	color: #333;
+	font-size: .75em;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.StyleGuide-color-swatch {
+	height: 3em;
+	width: 100%;
+}
+
+/* Font list */
+
+.StyleGuide-font-list dd {
+	margin-bottom: 1em;
+}
+
+/* Elements */
+
+.StyleGuide-h1 {
+	color: #262626;
+	font-size: 2em;
+	font-weight: 800;
+	margin-bottom: .5em;
+	padding-bottom: .25em;
+}
+
+.StyleGuide-h2 {
+	border-bottom: 2px solid #ccc;
+	color: #333;
+	font-size: 1.5em;
+	font-weight: 600;
+	margin-bottom: .5em;
+	padding-bottom: .25em;
+	text-transform: uppercase;
+}
+
+.StyleGuide-h3 {
+	color: #333;
+	font-size: 1.375em;
+	font-weight: 600;
+	margin-bottom: .5em;
+	margin-top: .5em;
+	text-transform: uppercase;
+}

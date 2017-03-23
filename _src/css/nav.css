@@ -1,2 +1,10 @@
 
 /* Nav */
+
+@media (min-width: 48em) {
+
+	.Nav {
+		margin: 0 1em;
+	}
+
+}

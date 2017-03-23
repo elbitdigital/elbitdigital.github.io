@@ -4,6 +4,10 @@
  * Licensed under MIT (https://github.com/elbitdigital/elbitdigital.github.io/blob/master/LICENSE)
 */
 
+pre, code {
+	overflow: scroll;
+}
+
 .container {
 	padding-left: 1.125em;
 	padding-right: 1.125em;
@@ -11,11 +15,30 @@
 	width: 100%;
 }
 
+@media (min-width: 48em) {}
+
 @media (min-width: 60em) {
 
 	.container {
+		max-width: 48em;
 		padding-left: 0;
 		padding-right: 0;
+	}
+
+}
+
+@media (min-width: 72em) {
+
+	.container {
+		max-width: 68em;
+	}
+
+}
+
+@media (min-width: 96em) {
+
+	.container {
+		max-width: 80em;
 	}
 
 }
