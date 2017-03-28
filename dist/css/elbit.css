@@ -61,6 +61,77 @@ code {
   margin-bottom: .5em;
   color: #333;
 }
+/* Footer */
+
+.Footer {
+  height: 100%;
+  padding: 2em 0;
+  position: relative;
+  width: 100%;
+}
+
+/* Footer background */
+
+.Footer-background {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.Footer-inner {
+  position: relative;
+  width: 100%;
+}
+
+.Footer-logo,
+.Footer-text {
+  margin-bottom: 1.5em;
+}
+
+@media (min-width: 48em) {
+  /* Footer inner */
+
+  .Footer-inner {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+
+  .Footer-logo {
+    flex: 1;
+  }
+
+  .Footer-nav {
+    flex: 1;
+    text-align: center;
+  }
+
+  .Footer-text {
+    flex: 2;
+    text-align: center;
+    padding: 0 1em;
+  }
+}
+
+@media (min-width: 60em) {
+
+}
+
+@media (min-width: 72em) {
+
+}
+
+@media (min-width: 96em) {
+
+}
 /* Header */
 
 .Header {
@@ -171,6 +242,11 @@ code {
   height: 100%;
 }
 
+.Logo-selectArea {
+  outline: none;
+  -moz-outline-style: none;
+}
+
 .Logo-inner {
   position: relative;
   width: 100%;
@@ -198,8 +274,17 @@ code {
 }
 
 .Logo #ElbitLogo-bit {
-  /*fill: transparent;*/
-  fill: #ffc400;
+  fill: transparent;
+  /*fill: #ffc400;*/
+}
+
+.Logo .Logo-selectArea {
+  /*fill: #ffc400;*/
+  -webkit-transition: all .3s .225s;
+  -moz-transition: all .3s .225s;
+  -ms-transition: all .3s .225s;
+  -o-transition: all .3s .225s;
+  transition: all .3s .225s;
 }
 
 .Logo .Logo-selectArea:hover #ElbitLogo * {
@@ -208,11 +293,11 @@ code {
 
 .Logo .Logo-selectArea:hover #ElbitLogo-bit {
   fill: #ffc400;
-  -webkit-transition: all .3s .225s;
-  -moz-transition: all .3s .225s;
-  -ms-transition: all .3s .225s;
-  -o-transition: all .3s .225s;
-  transition: all .3s .225s;
+}
+
+.Logo .Logo-selectArea:hover #ElbitLogo-mustache-left,
+.Logo .Logo-selectArea:hover #ElbitLogo-mustache-right {
+  fill: #34a5dd;
 }
 
 @media (min-width: 96em) {

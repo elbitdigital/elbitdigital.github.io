@@ -13,6 +13,11 @@
 	height: 100%;
 }
 
+.Logo-selectArea {
+	outline: none;
+	-moz-outline-style: none;
+}
+
 .Logo-inner {
 	position: relative;
 	width: 100%;
@@ -42,8 +47,17 @@
 }
 
 .Logo #ElbitLogo-bit {
-	/*fill: transparent;*/
-	fill: #ffc400;
+	fill: transparent;
+	/*fill: #ffc400;*/
+}
+
+.Logo .Logo-selectArea {
+	/*fill: #ffc400;*/
+	-webkit-transition: all .3s .225s;
+	-moz-transition: all .3s .225s;
+	-ms-transition: all .3s .225s;
+	-o-transition: all .3s .225s;
+	transition: all .3s .225s;
 }
 
 .Logo .Logo-selectArea:hover #ElbitLogo * {
@@ -52,11 +66,11 @@
 
 .Logo .Logo-selectArea:hover #ElbitLogo-bit {
 	fill: #ffc400;
-	-webkit-transition: all .3s .225s;
-	-moz-transition: all .3s .225s;
-	-ms-transition: all .3s .225s;
-	-o-transition: all .3s .225s;
-	transition: all .3s .225s;
+}
+
+.Logo .Logo-selectArea:hover #ElbitLogo-mustache-left,
+.Logo .Logo-selectArea:hover #ElbitLogo-mustache-right {
+fill: #34a5dd;
 }
 
 @media (min-width: 96em) {

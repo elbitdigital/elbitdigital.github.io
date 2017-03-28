@@ -58,17 +58,20 @@ https://elbit.com.br/jobs
 
 		<div class="Logo Header-logo">
 
-			<div class="Logo-selectArea">
+			<a href="/" class="Logo-selectArea">
 
 				<div id="logo" class="Logo-inner"></div>
 
-			</div>
+			</a>
 
 		</div>
 
 		<nav class="Nav">
 
-			<!-- TODO: mesma fonte que o logo -->
+			<!--TODO: mesma fonte que o logo-->
+			<!--DONE: typekit não estava carregando -->
+
+			<!--TODO: testar novo estilo de hover (background fill like pill)-->
 
 			<ul class="NavList">
 
@@ -98,13 +101,63 @@ https://elbit.com.br/jobs
 
 </section>
 
+<section class="container">
+
+
+</section>
+
+<footer class="Footer">
+
+	<div class="Footer-background blue-grey-50"></div>
+
+	<div class="Footer-inner container">
+
+		<div class="Logo Logo--footer FooterSlogan-logo Footer-logo">
+
+			<!-- TODO: retirar escrita (apenas símbolo) e redimensionar -->
+
+			<a href="/" class="Logo-selectArea">
+
+					<div id="footer-logo" class="Logo-inner"></div>
+
+			</a>
+
+		</div>
+
+		<div class="Footer-text">
+
+			<p>Imagine algum texto interessante escrito nessa parte do rodapé. O mal do mundo é ser muito mundano, ser mudo e mudar. Mudança em manada, desmatando manto de montanha. Matando com morteiro e morrendo na maresia.</p>
+
+		</div>
+
+		<div class="Footer-nav">
+
+			<ul class="Footer-nav-menu">
+
+				<li>Blog</li>
+				<li>
+					<a href="/style">Style Guide</a>
+				</li>
+				<li>Twitter</li>
+				<li>Facebook</li>
+				<li>Instagram</li>
+				<li>Github</li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+</footer>
+
 <script src="dist/js/elbit.js"></script>
 
 <script>
 
 	var logo = new Logo(document.getElementById('logo'), 'dist/img/ElbitLogo--web.svg', function () {
 
-//		logo.cloneTo(document.getElementById('footer-logo'));
+		logo.cloneTo(document.getElementById('footer-logo'));
 
 	});
 
