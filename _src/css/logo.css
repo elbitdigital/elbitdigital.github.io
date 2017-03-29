@@ -68,9 +68,13 @@
 	fill: #ffc400;
 }
 
+.Logo .Logo-selectArea:hover #ElbitLogo-border {
+	fill: #fff;
+}
+
 .Logo .Logo-selectArea:hover #ElbitLogo-mustache-left,
 .Logo .Logo-selectArea:hover #ElbitLogo-mustache-right {
-fill: #34a5dd;
+	fill: #34a5dd;
 }
 
 @media (min-width: 96em) {

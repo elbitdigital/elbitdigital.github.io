@@ -8,11 +8,35 @@ pre, code {
 	overflow: scroll;
 }
 
+aside a,
+section a,
+footer a {
+	border-bottom: 1px dotted #FF6F00;
+}
+
+aside a:hover,
+section a:hover,
+footer a:hover {
+	border-bottom-style: solid;
+}
+
 .container {
 	padding-left: 1.125em;
 	padding-right: 1.125em;
 	position: relative;
 	width: 100%;
+}
+
+/* Forgive thy anti-pattern, oh Lord! */
+
+@media (max-width: 48em) {
+
+	/* Line height for link lists on mobile */
+
+	ul.link--list > li {
+		line-height: 1.75;
+	}
+
 }
 
 @media (min-width: 48em) {}

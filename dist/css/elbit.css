@@ -9,11 +9,33 @@ code {
   overflow: scroll;
 }
 
+aside a,
+section a,
+footer a {
+  border-bottom: 1px dotted #FF6F00;
+}
+
+aside a:hover,
+section a:hover,
+footer a:hover {
+  border-bottom-style: solid;
+}
+
 .container {
   padding-left: 1.125em;
   padding-right: 1.125em;
   position: relative;
   width: 100%;
+}
+
+/* Forgive thy anti-pattern, oh Lord! */
+
+@media (max-width: 48em) {
+  /* Line height for link lists on mobile */
+
+  ul.link--list > li {
+    line-height: 1.75;
+  }
 }
 
 @media (min-width: 48em) {
@@ -61,6 +83,23 @@ code {
   margin-bottom: .5em;
   color: #333;
 }
+/* Footer Nav List */
+
+.FooterNavList {
+  /*padding-left: 2em;*/
+  /*text-align: left;*/
+  width: 100%;
+}
+
+.FooterNavList-item a {
+  max-width: 5em;
+  display: block;
+}
+/* Footer Nav */
+
+.FooterNav {
+  width: 100%;
+}
 /* Footer */
 
 .Footer {
@@ -86,7 +125,7 @@ code {
 }
 
 .Footer-logo,
-.Footer-text {
+.Footer-message {
   margin-bottom: 1.5em;
 }
 
@@ -109,12 +148,11 @@ code {
     flex: 1;
   }
 
-  .Footer-nav {
+  .FooterNav {
     flex: 1;
-    text-align: center;
   }
 
-  .Footer-text {
+  .Footer-message {
     flex: 2;
     text-align: center;
     padding: 0 1em;
@@ -293,6 +331,10 @@ code {
 
 .Logo .Logo-selectArea:hover #ElbitLogo-bit {
   fill: #ffc400;
+}
+
+.Logo .Logo-selectArea:hover #ElbitLogo-border {
+  fill: #fff;
 }
 
 .Logo .Logo-selectArea:hover #ElbitLogo-mustache-left,

@@ -1,0 +1,13 @@
+
+/* Footer Nav List */
+
+.FooterNavList {
+	/*padding-left: 2em;*/
+	/*text-align: left;*/
+	width: 100%;
+}
+
+.FooterNavList-item a {
+	max-width: 5em;
+	display: block;
+}
