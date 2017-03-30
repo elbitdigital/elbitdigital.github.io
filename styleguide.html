@@ -26,9 +26,9 @@
 <script>try{Typekit.load({async:true});}catch(e){}</script>
 
 <script src="dist/js/villa.min.js"></script>
+<link rel="stylesheet" href="dist/css/villa.min.css"/>
 <link rel="stylesheet" href="dist/css/elbit.css"/>
 <link rel="stylesheet" href="dist/css/style-guide.css"/>
-<link rel="stylesheet" href="dist/css/villa.min.css"/>
 <!--[if lt IE 9]>
 <link rel="stylesheet" type="text/css" href="dist/css/material-colors.css"/>
 <link rel="stylesheet" type="text/css" href="dist/css/villa-cross.min.css"/>
@@ -47,13 +47,9 @@
 
 		<div class="Logo Header-logo">
 
-			<a href="/">
+			<a href="/" class="Logo-selectArea">
 
-				<div class="Logo-selectArea">
-
-					<div id="logo" class="Logo-inner"></div>
-
-				</div>
+				<div id="logo" class="Logo-inner"></div>
 
 			</a>
 
@@ -92,15 +88,19 @@
 		<ul class="AsideList">
 
 			<li class=AsideList-item>
-				<a href="#StyleGuide-about">Introdução</a>
+				<a href="#about">Introdução</a>
+			</li>
+
+			<li class="AsideList-item">
+				<a href="#symbols">Símbolos</a>
 			</li>
 
 			<li class=AsideList-item>
-				<a href="#StyleGuide-colors">Cores</a>
+				<a href="#colors">Cores</a>
 			</li>
 
 			<li class=AsideList-item>
-				<a href="#StyleGuide-fontStacks">Fontes</a>
+				<a href="#fontStacks">Fontes</a>
 			</li>
 
 		</ul>
@@ -110,75 +110,75 @@
 		<ul class="AsideList link--list">
 
 			<li class=AsideList-item>
-				<a href="#StyleGuide-address">Address</a>
+				<a href="#address">Address</a>
 			</li>
 
 			<li class=AsideList-item>
-				<a href="#StyleGuide-blockquote">Blockquote</a>
+				<a href="#blockquote">Blockquote</a>
 			</li>
 
 			<li class=AsideList-item>
-				<a href="#StyleGuide-details">Details</a>
+				<a href="#details">Details</a>
 			</li>
 
 			<li class=AsideList-item>
-				<a href="#StyleGuide-figure">Figure</a>
+				<a href="#figure">Figure</a>
 			</li>
 
 			<li class=AsideList-item>
-				<a href="#StyleGuide-form-buttons">Form buttons</a>
+				<a href="#form-buttons">Form buttons</a>
 			</li>
 
 			<li class=AsideList-item>
-				<a href="#StyleGuide-form-fieldset">Form fieldset</a>
+				<a href="#form-fieldset">Form fieldset</a>
 			</li>
 
 			<li class=AsideList-item>
-				<a href="#StyleGuide-headings-1">Headings 1</a>
+				<a href="#headings-1">Headings 1</a>
 			</li>
 
 			<li class=AsideList-item>
-				<a href="#StyleGuide-headings-2">Headings 2</a>
+				<a href="#headings-2">Headings 2</a>
 			</li>
 
 			<li class=AsideList-item>
-				<a href="#StyleGuide-headings-3">Headings 3</a>
+				<a href="#headings-3">Headings 3</a>
 			</li>
 
 			<li class=AsideList-item>
-				<a href="#StyleGuide-hr">hr</a>
+				<a href="#hr">hr</a>
 			</li>
 
 			<li class=AsideList-item>
-				<a href="#StyleGuide-list-definition">Definição de lista</a>
+				<a href="#list-definition">Definição de lista</a>
 			</li>
 
 			<li class=AsideList-item>
-				<a href="#StyleGuide-list-ordered">Lista ordenada</a>
+				<a href="#list-ordered">Lista ordenada</a>
 			</li>
 
 			<li class=AsideList-item>
-				<a href="#StyleGuide-list-unordered">Lista não ordenada</a>
+				<a href="#list-unordered">Lista não ordenada</a>
 			</li>
 
 			<li class=AsideList-item>
-				<a href="#StyleGuide-meter-and-progress">meter and progress</a>
+				<a href="#meter-and-progress">meter and progress</a>
 			</li>
 
 			<li class=AsideList-item>
-				<a href="#StyleGuide-preformated-text">Texto preformatado</a>
+				<a href="#preformatted-text">Texto preformatado</a>
 			</li>
 
 			<li class=AsideList-item>
-				<a href="#StyleGuide-tabular-data">Dados tabulares</a>
+				<a href="#tabular-data">Dados tabulares</a>
 			</li>
 
 			<li class=AsideList-item>
-				<a href="#StyleGuide-text-elements">Elementos textuais</a>
+				<a href="#text-elements">Elementos textuais</a>
 			</li>
 
 			<li class=AsideList-item>
-				<a href="#StyleGuide-time">Time</a>
+				<a href="#time">Time</a>
 			</li>
 
 		</ul>
@@ -197,14 +197,18 @@
 				<!--DONE: ids no header; sem smooth scroll (desnecessário)-->
 
 				<div class="StyleGuide-about StyleGuide-section">
-					<h2 id="StyleGuide-about" class="StyleGuide-h2">Introdução</h2>
+					<h2 id="about" class="StyleGuide-h2">Introdução</h2>
 					<p>Um guia de estilos é uma ótima ferramenta para estabelecer consistência visual, unificar os
-						designers de UX
-						e desenvolvedores front-end, assim como acelerar a velocidade de desenvolvimento.</p>
+						designers de UX e desenvolvedores front-end, assim como acelerar a velocidade de desenvolvimento.</p>
+				</div>
+
+				<div class="StyleGuide-symbols StyleGuide-section">
+					<h2 id="symbols" class="StyleGuide-h2">Símbolos</h2>
+					<p>Um estado de todos os dados.</p>
 				</div>
 
 				<div class="StyleGuide-colors StyleGuide-section">
-					<h2 id="StyleGuide-colors" class="StyleGuide-h2">Cores</h2>
+					<h2 id="colors" class="StyleGuide-h2">Cores</h2>
 					<div class="StyleGuide-color-grid">
 						<div class="StyleGuide-color">
 							<div class="StyleGuide-color-swatch" style="background-color: #1abc9c;"></div>
@@ -274,7 +278,7 @@
 				</div>
 
 				<div class="StyleGuide-font-stacks StyleGuide-section">
-					<h2 id="StyleGuide-fontStacks" class="StyleGuide-h2">Fontes</h2>
+					<h2 id="fontStacks" class="StyleGuide-h2">Fontes</h2>
 					<dl class="StyleGuide-font-list">
 						<dt>Fonte primária:</dt>
 						<dd style='font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;'>
@@ -316,7 +320,7 @@
 
 				<div class="StyleGuide-markup StyleGuide-section">
 					<div class="StyleGuide-display">
-						<h2 id="StyleGuide-address" class="StyleGuide-h2">address</h2>
+						<h2 id="address" class="StyleGuide-h2">address</h2>
 						<address>
 							Company Name, Inc.<br>
 							811 7th Ave, Suite 700<br>
@@ -329,10 +333,13 @@
 
 				<div class="StyleGuide-markup StyleGuide-section">
 					<div class="StyleGuide-display">
-						<h2 id="StyleGuide-blockquote" class="StyleGuide-h2">blockquote</h2>
+						<h2 id="blockquote" class="StyleGuide-h2">blockquote</h2>
 						<blockquote>
 							<p>Some sort of famous witty quote marked up with a &lt;blockquote> and a child &lt;p>
 								element.</p>
+							<p>Some sort of famous witty quote marked up with a &lt;blockquote> and a child &lt;p>
+								element with a longer text so we can see the text wrapping all the way around without
+								lorem ipsum because why not.</p>
 						</blockquote>
 
 						<blockquote>
@@ -344,7 +351,7 @@
 
 				<div class="StyleGuide-markup StyleGuide-section">
 					<div class="StyleGuide-display">
-						<h2 id="StyleGuide-details" class="StyleGuide-h2">details</h2>
+						<h2 id="details" class="StyleGuide-h2">details</h2>
 						<details open>
 							<summary>More info</summary>
 							<div>
@@ -381,7 +388,7 @@
 
 				<div class="StyleGuide-markup StyleGuide-section">
 					<div class="StyleGuide-display">
-						<h2 id="StyleGuide-figure" class="StyleGuide-h2">figure</h2>
+						<h2 id="figure" class="StyleGuide-h2">figure</h2>
 						<figure>
 							<img src="http://placehold.it/240x240" alt="Image alt text 1">
 							<figcaption>Figcaption content</figcaption>
@@ -400,28 +407,31 @@
 
 				<div class="StyleGuide-markup StyleGuide-section">
 					<div class="StyleGuide-display">
-						<h2 id="StyleGuide-form-buttons" class="StyleGuide-h2">form buttons</h2>
+						<h2 id="form-buttons" class="StyleGuide-h2">form buttons</h2>
 						<form>
 							<fieldset>
 								<legend>Buttons</legend>
-								<p><input type="button" value="Input type button"></p>
-								<p><input type="reset" value="Input type reset"></p>
-								<p><input type="submit" value="Input type submit"></p>
-								<p><input type="submit" value="Input type submit disabled" disabled></p>
+								<p><input type="button" class="Button Button--primary" value="Input type button"></p>
+								<p><input type="reset" class="Button Button--primary" value="Input type reset"></p>
+								<p><input type="submit" class="Button Button--primary" value="Input type submit"></p>
+								<p><input type="submit" class="Button Button--primary Button--disabled" value="Input type submit disabled" disabled></p>
 								<p>
-									<button type="button">Button type button</button>
+									<button type="button" class="Button Button--primary">Button type button</button>
 								</p>
 								<p>
-									<button type="reset">Button type reset</button>
+									<button type="reset" class="Button Button--primary">Button type reset</button>
 								</p>
 								<p>
-									<button type="submit">Button type submit</button>
+									<button type="submit" class="Button Button--primary">Button type submit</button>
 								</p>
 								<p>
-									<button type="button" disabled>Button type button disabled</button>
+									<button type="button" class="Button Button--disabled" disabled>Button type button disabled</button>
 								</p>
 								<p>
-									<button>Button</button>
+									<button class="Button">Button</button>
+								</p>
+								<p>
+									<button class="Button Button--silent">Silent button</button>
 								</p>
 							</fieldset>
 						</form>
@@ -430,7 +440,7 @@
 
 
 				<!--<div class="StyleGuide-markup StyleGuide-section">-->
-				<!--<div class="StyleGuide-display"><h2 id="StyleGuide-form-fields-readonly" class="StyleGuide-h2">form fields readonly</h2>-->
+				<!--<div class="StyleGuide-display"><h2 id="form-fields-readonly" class="StyleGuide-h2">form fields readonly</h2>-->
 				<!--<p>Add your personalized documentation here.</p></div>-->
 				<!--<form>-->
 				<!--<fieldset>-->
@@ -472,12 +482,18 @@
 
 				<div class="StyleGuide-markup StyleGuide-section">
 					<div class="StyleGuide-display">
-						<h2 id="StyleGuide-form-fieldset" class="StyleGuide-h2">form fieldset</h2>
+						<h2 id="form-fieldset" class="StyleGuide-h2">form fieldset</h2>
 						<form>
 							<fieldset>
 								<legend>Fieldset with legend</legend>
 								<p><label for="fieldset-text-input1">Text Input</label> <input
 										id="fieldset-text-input1" type="text"></p>
+							</fieldset>
+
+							<fieldset>
+								<legend>Another fieldset with legend</legend>
+								<p><label for="fieldset-text-input2">Other text Input</label> <input
+										id="fieldset-text-input2" type="text"></p>
 							</fieldset>
 							<input type="submit" value="Submit form">
 						</form>
@@ -487,7 +503,7 @@
 
 				<div class="StyleGuide-markup StyleGuide-section">
 					<div class="StyleGuide-display">
-						<h2 id="StyleGuide-headings-1" class="StyleGuide-h2">headings 1</h2>
+						<h2 id="headings-1" class="StyleGuide-h2">headings 1</h2>
 						<h1>Heading 1 with
 							<small>small text</small>
 							and a <a href="#">link</a></h1>
@@ -512,7 +528,7 @@
 
 				<div class="StyleGuide-markup StyleGuide-section">
 					<div class="StyleGuide-display">
-						<h2 id="StyleGuide-headings-2" class="StyleGuide-h2">headings 2</h2>
+						<h2 id="headings-2" class="StyleGuide-h2">headings 2</h2>
 						<article>
 							<h1>Heading 1 (in article) with
 								<small>small text</small>
@@ -539,7 +555,7 @@
 
 				<div class="StyleGuide-markup StyleGuide-section">
 					<div class="StyleGuide-display">
-						<h2 id="StyleGuide-headings-3" class="StyleGuide-h2">headings 3</h2>
+						<h2 id="headings-3" class="StyleGuide-h2">headings 3</h2>
 						<section>
 							<h1>Heading 1 (in section) with
 								<small>small text</small>
@@ -566,7 +582,7 @@
 
 				<div class="StyleGuide-markup StyleGuide-section">
 					<div class="StyleGuide-display">
-						<h2 id="StyleGuide-hr" class="StyleGuide-h2">hr</h2>
+						<h2 id="hr" class="StyleGuide-h2">hr</h2>
 						<hr>
 					</div>
 				</div>
@@ -574,7 +590,7 @@
 
 				<div class="StyleGuide-markup StyleGuide-section">
 					<div class="StyleGuide-display">
-						<h2 id="StyleGuide-list-definition" class="StyleGuide-h2">list definition</h2>
+						<h2 id="list-definition" class="StyleGuide-h2">list definition</h2>
 						<dl>
 							<dt>Description name</dt>
 							<dd>Description value</dd>
@@ -591,7 +607,7 @@
 
 				<div class="StyleGuide-markup StyleGuide-section">
 					<div class="StyleGuide-display">
-						<h2 id="StyleGuide-list-ordered" class="StyleGuide-h2">list ordered</h2>
+						<h2 id="list-ordered" class="StyleGuide-h2">list ordered</h2>
 						<ol>
 							<li>list item 1</li>
 							<li>list item 1
@@ -616,7 +632,7 @@
 
 				<div class="StyleGuide-markup StyleGuide-section">
 					<div class="StyleGuide-display">
-						<h2 id="StyleGuide-list-unordered" class="StyleGuide-h2">list unordered</h2>
+						<h2 id="list-unordered" class="StyleGuide-h2">list unordered</h2>
 						<ul>
 							<li>list item 1</li>
 							<li>list item 1
@@ -641,7 +657,7 @@
 
 				<div class="StyleGuide-markup StyleGuide-section">
 					<div class="StyleGuide-display">
-						<h2 id="StyleGuide-meter-and-progress" class="StyleGuide-h2">meter and progress</h2>
+						<h2 id="meter-and-progress" class="StyleGuide-h2">meter and progress</h2>
 						<h3 class="StyleGuide-h3">Meter</h3>
 						<p>
 							<meter value="100" max="100" low="70" high="90">100%</meter>
@@ -683,7 +699,7 @@
 
 				<div class="StyleGuide-markup StyleGuide-section">
 					<div class="StyleGuide-display">
-						<h2 id="StyleGuide-preformated-text" class="StyleGuide-h2">preformated text</h2>
+						<h2 id="preformatted-text" class="StyleGuide-h2">preformatted text</h2>
 						<pre>
 P R E F O R M A T T E D T E X T
 ! " # $ % &amp; ' ( ) * + , - . /
@@ -695,24 +711,20 @@ p q r s t u v w x y z { | } ~
 						</pre>
 
 						<h3 class="StyleGuide-h3">Pre Code</h3>
-						<pre>
-							<code>
-&lt;html>
+						<pre><code>&lt;html>
 	&lt;head>
 	&lt;/head>
 	&lt;body>
 		&lt;div> &lt;div>
 	&lt;/body>
-&lt;/html>
-							</code>
-						</pre>
+&lt;/html></code></pre>
 					</div>
 				</div>
 
 
 				<div class="StyleGuide-markup StyleGuide-section">
 					<div class="StyleGuide-display">
-						<h2 id="StyleGuide-tabular-data" class="StyleGuide-h2">tabular data</h2>
+						<h2 id="tabular-data" class="StyleGuide-h2">tabular data</h2>
 						<h3 class="StyleGuide-h3">Default Table</h3>
 						<table>
 							<caption>Table Caption</caption>
@@ -772,7 +784,7 @@ p q r s t u v w x y z { | } ~
 
 				<div class="StyleGuide-markup StyleGuide-section">
 					<div class="StyleGuide-display">
-						<h2 id="StyleGuide-text-elements" class="StyleGuide-h2">text elements</h2>
+						<h2 id="text-elements" class="StyleGuide-h2">text elements</h2>
 						<p>The <a href="#">a element</a> example</p>
 						<p>The <abbr>abbr element</abbr> and an <abbr title="Abbreviation">abbr</abbr> element with
 							title examples</p>
@@ -816,7 +828,7 @@ p q r s t u v w x y z { | } ~
 
 				<div class="StyleGuide-markup StyleGuide-section">
 					<div class="StyleGuide-display">
-						<h2 id="StyleGuide-time" class="StyleGuide-h2">time</h2>
+						<h2 id="time" class="StyleGuide-h2">time</h2>
 						<p>Remember, remember the
 							<time datetime="1605-11-05">5<sup>th</sup> of November</time>
 						</p>
@@ -856,12 +868,15 @@ p q r s t u v w x y z { | } ~
 			Imagine algum texto interessante escrito nessa parte do rodapé. O mal do mundo é ser muito mundano, ser mudo e mudar. Mudança em manada, desmatando manto de montanha. Matando com morteiro e morrendo na maresia.
 		</p>
 
+		<!--TODO: posicionar responsivamente o padding do nav footer-->
+		<!--DONE: texto justificado >>tablet-->
+
 		<nav class="FooterNav">
 
 			<ul class="FooterNavList link--list">
 
 				<li class="FooterNavList-item">
-					<a href="https://blog.elbit.com.br">Blog</a>
+					<a href="#">Blog</a>
 				</li>
 
 				<li class="FooterNavList-item">
@@ -876,7 +891,9 @@ p q r s t u v w x y z { | } ~
 					<a href="https://facebook.com/elbitdigital" target="_blank">Facebook</a>
 				</li>
 
-				<li class="FooterNavList-item">Instagram</li>
+				<li class="FooterNavList-item">
+					<a href="#">Instagram</a>
+				</li>
 
 				<li class="FooterNavList-item">
 					<a href="https://github.com/elbitdigital" target="_blank">Github</a>

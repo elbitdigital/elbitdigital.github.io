@@ -2,12 +2,18 @@
 /* Footer Nav List */
 
 .FooterNavList {
-	/*padding-left: 2em;*/
-	/*text-align: left;*/
 	width: 100%;
 }
 
 .FooterNavList-item a {
-	max-width: 5em;
-	display: block;
+	width: 6em;
+	display: inline-block;
+}
+
+@media (min-width: 48em) {
+
+	.FooterNavList-item a {
+		text-align: right;
+	}
+
 }

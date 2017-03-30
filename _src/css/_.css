@@ -11,13 +11,77 @@ pre, code {
 aside a,
 section a,
 footer a {
-	border-bottom: 1px dotted #FF6F00;
+	/*border-bottom: 1px dotted #FF6F00;*/
+	border-bottom: 2px dotted #34a5dd;
 }
 
 aside a:hover,
 section a:hover,
 footer a:hover {
 	border-bottom-style: solid;
+}
+
+fieldset {
+	border: 1px solid #90a4ae;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+legend {
+	/*background-color: #90a4ae;*/
+	border: 1px solid #90a4ae;
+	/*color: #eceff1;*/
+	color: #323232;
+	padding: .25em .725em;
+	font-family: 'Roboto', 'Noto', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: .875em;
+}
+
+blockquote {
+	background-color: #eceff1;
+	border-left: .25em solid #90a4ae;
+	font-size: 1em;
+	margin: 1em 0;
+	padding: .5em .5em .5em 1em;
+}
+
+pre {
+	background-color: #eceff1;
+	position: relative;
+	padding-left: 1em;
+	white-space: pre-wrap !important;
+}
+
+pre:before,
+pre code:before {
+	display: block;
+	font-family: 'Roboto', 'Noto', sans-serif;
+	font-weight: 900;
+	margin-left: -1em;
+	padding: .5em 1em;
+	position: relative;
+	text-transform: uppercase;
+	font-size-adjust: none;
+}
+
+pre:before {
+	background-color: #90a4ae;
+	color: #eceff1;
+	content: "TEXTO FORMATADO";
+	font-size: 12px;
+	font-size: .75rem;
+	margin-bottom: .5em;
+}
+
+pre code:before {
+	color: #90a4ae;
+	content: "CÓDIGO";
+	font-size: 10px;
+	font-size: .625rem;
+	margin-left: -1em;
+	margin-top: -.5em;
 }
 
 .container {
@@ -39,7 +103,15 @@ footer a:hover {
 
 }
 
-@media (min-width: 48em) {}
+@media (min-width: 48em) {
+
+	blockquote {
+		border-left: .5em solid #90a4ae;
+		font-size: 1.175em;
+		padding: 1em 1em 1em 1.5em;
+	}
+
+}
 
 @media (min-width: 60em) {
 

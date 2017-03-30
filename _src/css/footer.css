@@ -28,7 +28,6 @@
 	margin-bottom: 1.5em;
 }
 
-
 @media (min-width: 48em) {
 
 	/* Footer inner */
@@ -41,23 +40,30 @@
 		display: -ms-flexbox;
 		display: -webkit-flex;
 		display: flex;
-		-webkit-justify-content: center;
-		justify-content: center;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
 	}
 
 	.Footer-logo {
-		flex: 1;
+		/*flex: 1;*/
+		min-width: 7.5em;
 	}
 
     .FooterNav {
-	    flex: 1;
+	    /*flex: 1;*/
     }
 
     .Footer-message {
-	    flex: 2;
-	    text-align: center;
-	    padding: 0 1em;
+	    /*flex: 2;*/
+	    max-width: 40em;
+	    text-align: justify;
+	    padding: 0 2em;
     }
+
+	.Footer-logo,
+	.Footer-message {
+		margin-bottom: 0;
+	}
 
 }
 
